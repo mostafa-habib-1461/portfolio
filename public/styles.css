@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 .resume-layout,
 .media-layout {
   display: grid;
-  gap: 30px;
+  gap: 36px;
 }
 
 .hero-grid {
@@ -168,24 +168,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-card::after,
 .panel::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 42%);
+  display: none;
 }
 
 .card-body,
 .section-card,
 .resume-hero,
 .media-hero {
-  padding: 30px;
+  padding: 34px;
 }
 
 .hero-card {
   min-height: 600px;
   display: grid;
-  gap: 18px;
+  gap: 24px;
   align-content: start;
 }
 
@@ -293,24 +289,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-trio {
   display: grid;
-  gap: 28px;
+  gap: 34px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .project-section {
   display: grid;
-  gap: 22px;
-  margin-top: 30px;
-  padding: 28px;
+  gap: 28px;
+  margin-top: 36px;
+  padding: 34px;
 }
 
 .project-card {
   display: grid;
   grid-template-columns: minmax(100px, 0.25fr) minmax(0, 1fr) auto;
   align-items: center;
-  gap: 24px;
+  gap: 30px;
   min-height: 168px;
-  padding: 22px;
+  padding: 26px;
   background:
     linear-gradient(135deg, rgba(138, 199, 255, 0.16), rgba(255, 255, 255, 0.82) 42%),
     rgba(255, 255, 255, 0.8);
@@ -398,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-grid {
   display: grid;
-  gap: 30px;
+  gap: 36px;
 }
 
 .section-title {
@@ -486,11 +482,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(140deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-  pointer-events: none;
+  display: none;
+}
+
+.resume-divider {
+  height: 22px;
 }
 
 .timeline-top {
@@ -551,12 +547,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .resume-section {
-  padding: 28px;
+  padding: 34px;
 }
 
 .resume-stack {
   display: grid;
-  gap: 22px;
+  gap: 28px;
 }
 
 .resume-top {
@@ -581,7 +577,7 @@ h1, h2, h3, h4, h5, h6 {
 .placeholder-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  gap: 28px;
 }
 
 .placeholder-card {
@@ -684,7 +680,7 @@ h1, h2, h3, h4, h5, h6 {
   .resume-hero,
   .media-hero,
   .project-section {
-    padding: 18px;
+    padding: 22px;
   }
 
   .hero-card {
@@ -712,8 +708,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .project-card {
     grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 18px;
+    gap: 20px;
+    padding: 22px;
   }
 
   .project-index {
