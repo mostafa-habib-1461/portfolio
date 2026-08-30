@@ -297,6 +297,65 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.project-section {
+  display: grid;
+  gap: 22px;
+  margin-top: 30px;
+  padding: 28px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(100px, 0.25fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  min-height: 168px;
+  padding: 22px;
+  background:
+    linear-gradient(135deg, rgba(138, 199, 255, 0.16), rgba(255, 255, 255, 0.82) 42%),
+    rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent, var(--sky));
+  border-radius: 18px;
+}
+
+.project-index {
+  display: grid;
+  place-items: center;
+  min-height: 112px;
+  border-radius: 14px;
+  background: var(--accent-soft, rgba(138, 199, 255, 0.18));
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.project-copy {
+  min-width: 0;
+}
+
+.project-kicker {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-copy h3 {
+  font-size: 1.2rem;
+}
+
+.project-copy p:last-child {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.project-link {
+  justify-self: end;
+}
+
 .portal {
   min-height: 200px;
   display: grid;
@@ -595,6 +654,15 @@ h1, h2, h3, h4, h5, h6 {
   .placeholder-card.large {
     min-height: 340px;
   }
+
+  .project-card {
+    grid-template-columns: 108px minmax(0, 1fr);
+  }
+
+  .project-link {
+    grid-column: 2;
+    justify-self: start;
+  }
 }
 
 @media (max-width: 720px) {
@@ -614,7 +682,8 @@ h1, h2, h3, h4, h5, h6 {
   .card-body,
   .section-card,
   .resume-hero,
-  .media-hero {
+  .media-hero,
+  .project-section {
     padding: 18px;
   }
 
@@ -639,6 +708,21 @@ h1, h2, h3, h4, h5, h6 {
 
   .detail-list li span {
     text-align: left;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 18px;
+  }
+
+  .project-index {
+    min-height: 86px;
+  }
+
+  .project-link {
+    grid-column: auto;
+    justify-self: start;
   }
 }
 
